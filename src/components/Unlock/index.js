@@ -34,11 +34,7 @@ const Unlock = () => {
         )}
       </Text>
       <Button onClick={() => setLock(prevState => !prevState)}>
-        {lock ? (
-          <StatusText>Locked</StatusText>
-        ) : (
-          <StatusText>UnLocked</StatusText>
-        )}
+        {lock ? <StatusText>Unlock</StatusText> : <StatusText>Lock</StatusText>}
       </Button>
     </MainContainer>
   )
